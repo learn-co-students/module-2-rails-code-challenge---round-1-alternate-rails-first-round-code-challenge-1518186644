@@ -1,7 +1,10 @@
-<h1>All Vendors</h1>
+<h1>Sweets's page</h1>
 
+<%= @sweet.name %>
+
+<h2>Vendors:</h2>
 <ul>
   <% @vendors.each do |vendor| %>
     <li><%= link_to vendor.name, vendor_path(vendor) %></li>
-  <% end  %>
+  <% end %>
 </ul>
